@@ -1,0 +1,32 @@
+{
+  "name": "<your-project>.types-depot",
+  "version": "0.0.101",
+  "description": "Types depot for your org/project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'noop'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ORESoftware/types-depot.git"
+  },
+  "keywords": [
+    "types",
+    "type-creator",
+    "static-typing",
+    "types-depot",
+    "types-repo",
+    "type-depot",
+    "type-repo",
+    "type-repot"
+  ],
+  "author": "Olegzandr VD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ORESoftware/types-depot/issues"
+  },
+  "homepage": "https://github.com/ORESoftware/types-depot#readme",
+  "dependencies": {
+    "type-creator": "0.0.1001"
+  }
+}
