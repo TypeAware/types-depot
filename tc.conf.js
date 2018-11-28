@@ -1,16 +1,34 @@
 'use strict';
 
+const {generators} = require('type-creator/generators');
 
+const folder = '/home/oleg/codes/oresoftware/types-depot/builds';
 
 exports.default = {
   
-  langs: {
-    java8: {
-      output: { folder: '/x/y/z', file: 'java-8.java' }
+  buildFolder: folder,
+  
+  tasks: [
+  
+    {
+      lang: 'typescript',
+      gen: generators.typescript,
+      output: { folder: 'typescript' }
     },
-    java11:{
-      output: { folder: '/x/y/z', file: 'java-11.java' }
-    }
+  
+    // {
+    //   lang: 'java11',
+    //   gen: generators.typescript,
+    //   output: { folder }
+    // }
+    
+    // java8: {
+    //   output: { folder, gen: generators.ts }
+    // },
+    //
+    // java11:{
+    //   output: { folder, gen: generators.ts }
+    // }
  
-  }
+  ]
 };
