@@ -4,39 +4,40 @@ const {TypeCreator, symbols, utils} = require('type-creator');
 
 
 const tc = new TypeCreator();
-const {set, setType, setTypeMap} = tc.getTypeUtils();
-const {ts,go,java} = tc.getLangSymbols();
+const {set, setType} = tc.getTypeUtils();
+const {ts, go, java} = tc.getLangSymbols();
 const cmn = tc.getCommonSymbols();
 const {defs} = tc.getDefaults();
 
 const v = tc.registerSymbols({
-  foo: {value: Symbol('zoom0'), kind:'Dummy1'},
-  bar:{value: Symbol('zoom1'), kind:'Dummy2'}
+  foo: {value: Symbol('zoom0'), kind: 'Dummy1'},
+  bar: {value: Symbol('zoom1'), kind: 'Dummy2'}
 });
 
 
-const ent = tc.registerEntities('default',{
+const ent = tc.registerEntities('default', {
   
   Inner: {
-    Zoom: set(ts.Interface,{
-    
-    })
+    Zoom: set([ts.Interface], {})
   },
   
   foo: {
     
+    // x: ()=> ent.foo.GET.miasmic,
+    
     PUT: {
       
-      basic: set({
+      basic: set([],{
         
-        DogPigRoop:  set(ts.Interface,{
+        DogPigRoop: set([ts.Interface], {
           dog: defs.String,
           pig: defs.Boolean,
-          roop:[{}],
+          // roop: [{}],
+          roop: [defs.Object],
           stoop: [defs.Boolean]
         }),
         
-        v: set(ts.Interface,{
+        v: set([ts.Interface], {
           zoom: setType({
             link: 'DogPigRoop'
           }),
@@ -50,11 +51,11 @@ const ent = tc.registerEntities('default',{
           path: '/foo',
         }),
         
-        req: set(go.Struct, ts.Interface, {
+        req: set([go.Struct, ts.Interface], {
           headers: {
             'x_requested_by': 'foo'
           },
-          body: set({
+          body: set([],{
             // foo: 'string',
             // bar:'number',
             // zoom: 'boolean'
@@ -63,39 +64,39 @@ const ent = tc.registerEntities('default',{
             zoom: defs.Boolean
           })
         }),
-        res: set(go.Struct, {
+        res: set([go.Struct], {
           headers: {}
         })
       }),
-        
-        tragic: set(ts.Interface,{
+      
+      tragic: set([ts.Interface], {
         path: '/foo',
-        req: set(go.Struct,{
+        req: set([go.Struct], {
           headers: {
             'x_requested_by': 'foo'
           },
-          body: set({
+          body: set([],{
             foo: 'string'
           })
         }),
-        res: set(go.Struct, {
+        res: set([go.Struct], {
           headers: {}
         })
       })
     },
     
     GET: {
-      miasmic: set(ts.Interface,{
+      miasmic: set([ts.Interface], {
         path: '/foo',
-        req: set(go.Struct,{
+        req: set([go.Struct], {
           headers: {
             'x_requested_by': 'foo'
           },
-          body: set({
+          body: set([],{
             foo: 'string',
           })
         }),
-        res: set(go.Struct,{
+        res: set([go.Struct], {
           headers: {}
         })
       })
@@ -105,44 +106,42 @@ const ent = tc.registerEntities('default',{
   
   bar: {
     PUT: {
-      basic: set(ts.Interface,{
+      basic: set([ts.Interface], {
         
-        [cmn.Optional]:['path'],
+        [cmn.Optional]: ['path'],
         
         path: '/foo',
-        req: set(go.Struct,{
+        req: set([go.Struct], {
           headers: {},
           body: {}
         }),
-        res: set(go.Struct,{
+        res: set([go.Struct], {
           headers: {}
         })
       })
     },
     
     GET: {
-      basic: set(ts.Interface,{
+      basic: set([ts.Interface], {
+        
         path: '/foo',
-        req: set(go.Struct,{
+        req: set([go.Struct], {
+          
           headers: {},
           body: {}
+          
         }),
-        res: set(go.Struct,{
+        res: set([go.Struct], {
+          
           headers: {}
+          
         })
       })
       
     }
   }
   
-
-
-
-
 });
-
-
-
 
 
 exports.tc = tc;
