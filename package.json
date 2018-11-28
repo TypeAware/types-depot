@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/ORESoftware/types-depot#readme",
   "dependencies": {
-    "type-creator": "0.0.1001"
+    "type-creator": "file:../type-creator"
   }
 }
