@@ -14,7 +14,7 @@ exports.default = {
     },
     {
       src: resolve(__dirname, 'test','fixtures', 'Entities.java'),
-      dest: resolve(testBuilds, 'java', 'gson','src/main/java/suman')
+      dest: [resolve(testBuilds, 'java', 'gson','src/main/java/suman')]
     }
   ]
   
