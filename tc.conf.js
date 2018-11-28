@@ -1,25 +1,36 @@
 'use strict';
 
+const path = require('path');
 const {generators} = require('type-creator');
-
-const folder = '/home/oleg/codes/oresoftware/types-depot/builds';
 
 exports.default = {
   
-  buildFolder: folder,
+  buildFolder: path.resolve(__dirname, 'builds'),
   
   tasks: [
     
     {
       lang: 'typescript',
       gen: generators.typescript,
-      output: {folder: 'typescript', file: 'types.ts'}
+      output: {folder: 'typescript', file: 'types.ts'},
+    },
+  
+    {
+      lang: 'golang',
+      gen: generators.golang,
+      output: {folder: 'golang', file: 'golang.go'},
+      options: {
+        packageName:'golang'
+      }
     },
     
     {
       lang: 'java',
       gen: generators.java,
-      output: {folder: 'java', file: 'Entities.java'}
+      output: {folder: 'java', file: 'Entities.java'},
+      options:{
+        jar: true
+      }
     }
     
     // java8: {
