@@ -1,15 +1,16 @@
 'use strict';
 
 const path = require('path');
-const builds = path.resolve(__dirname, 'builds');
-const testBuilds = path.resolve(__dirname, 'test', 'builds');
 const resolve = (...args) => path.resolve(...args);
+const builds = resolve(__dirname, 'builds');
+const testBuilds = resolve(__dirname, 'test', 'builds');
+
 
 exports.default = {
   
   symlinks: [
     {
-      src: resolve(builds, 'golang', 'entities'),
+      src: resolve(builds, 'golang', 'one'),
       dest: resolve(testBuilds, 'golang', 'src')
     },
     {
