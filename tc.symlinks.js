@@ -10,7 +10,7 @@ exports.default = {
   
   symlinks: [
     {
-      src: resolve(builds, 'golang', 'one'),
+      src: resolve(builds, 'golang', 'entities'),
       dest: resolve(testBuilds, 'golang', 'src')
     },
     {
