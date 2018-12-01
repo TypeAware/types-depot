@@ -40,16 +40,16 @@ const custom = {
 
 const ent = tc.registerEntities('default',{
   
-  foo: set(go.Entity,{
+  foo: set(go.Entity, cmn.AddPath, {
     
-    PUT: {
+    PUT: set(cmn.AddPath, {
       
-      basic: set(ts.Interface, {
+      basic: set(cmn.AddPath,ts.Interface, {
         
-        req: set(go.File,{
-          headers: {
+        req: set(go.File,cmn.AddPath,{
+          headers: set(cmn.AddPath,{
             x_requested_by: custom.string
-          },
+          }),
           body: {
             foo: defs.String,
             bar: defs.Int,
@@ -78,7 +78,7 @@ const ent = tc.registerEntities('default',{
           }
         })
       })
-    },
+    }),
     
     GET: {
       miasmic: set(ts.Interface,{
