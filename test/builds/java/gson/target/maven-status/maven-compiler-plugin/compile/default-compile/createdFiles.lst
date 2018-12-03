@@ -13,6 +13,7 @@ suman/Bentities$bar$GET$basic$req$headers.class
 suman/Entities$foo$GET$miasmic$req$headers.class
 suman/Entities$foo$PUT$basic$req$headers.class
 suman/Entities$bar$PUT$basic.class
+suman/one/Zone.class
 suman/Bentities$foo$GET$miasmic$req$headers.class
 suman/Bentities$foo$PUT$basic$res$Headers.class
 suman/Bentities$foo$PUT$basic$req$body.class
@@ -58,6 +59,7 @@ suman/Bentities$foo$GET$miasmic$res$headers.class
 suman/Bentities$foo$PUT$basic$req.class
 suman/Entities$bar$GET$basic$req$headers.class
 suman/Entities$bar$GET$basic$req.class
+suman/two/Txwo.class
 suman/Bentities$bar$GET$basic$res.class
 suman/Bentities$bar.class
 suman/Entities$bar$GET$basic$res.class

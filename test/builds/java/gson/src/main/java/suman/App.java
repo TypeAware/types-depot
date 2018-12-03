@@ -7,8 +7,11 @@ import com.google.gson.*;
 import static java.lang.System.out;
 import static suman.Entities.foo;
 import java.util.*;
+import suman.one.*;
 
 class JsonObject extends foo.PUT.basic.req.body {
+    
+    Zone z = new Zone();
     String stew;
     Nested nested;
     Map m;
