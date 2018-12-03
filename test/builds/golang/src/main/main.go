@@ -6,7 +6,7 @@ import (
 )
 
 
-type Foo struct {
+type Foo = struct {
 	F string `zoom:"1"`
 }
 

@@ -2,9 +2,9 @@ package suman.two;
 
 import suman.one.*;
 
-public class Txwo {
+public class Two {
 
-  public Txwo(){
+  public Two(){
     Zone o = new Zone();
   }
 

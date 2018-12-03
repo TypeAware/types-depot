@@ -9,7 +9,7 @@ public class Zone {
   }
   
   public void create(){
-    Txwo t = new Txwo();
+    Two t = new Two();
   }
 
 }

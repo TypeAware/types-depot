@@ -59,13 +59,13 @@ suman/Bentities$foo$GET$miasmic$res$headers.class
 suman/Bentities$foo$PUT$basic$req.class
 suman/Entities$bar$GET$basic$req$headers.class
 suman/Entities$bar$GET$basic$req.class
-suman/two/Txwo.class
 suman/Bentities$bar$GET$basic$res.class
 suman/Bentities$bar.class
 suman/Entities$bar$GET$basic$res.class
 suman/Bentities$bar$PUT$basic$res$headers.class
 suman/Bentities$foo$GET$miasmic$req.class
 suman/Bentities$foo$PUT$basic$res.class
+suman/two/Two.class
 suman/Entities$foo$PUT$basic$res$Headers.class
 suman/Entities$foo$PUT$tragic$req$headers.class
 suman/Bentities$foo.class
