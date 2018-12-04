@@ -31,6 +31,15 @@ exports.default = {
       options:{
         jar: true
       }
+    },
+  
+    {
+      lang: 'java',
+      gen: generators.json,
+      output: {folder: 'json', file: 'entities.json'},
+      options:{
+        jar: true
+      }
     }
     
     // java8: {
