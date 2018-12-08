@@ -5,6 +5,6 @@
 
 cd "$(dirname $(dirname "$BASH_SOURCE"))"
 
-mvn install -DskipTests
+mvn -T 12 clean install -DskipTests
 
 mvn exec:java -Dexec.mainClass="suman.App"

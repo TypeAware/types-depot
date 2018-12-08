@@ -5,4 +5,5 @@
 # mvn -Dtest=SeleniumTest test
 # mvn -Dtest=ExampleTest test
 
+cd "$(dirname $(dirname "$BASH_SOURCE"))"
 mvn clean test

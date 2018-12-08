@@ -20,19 +20,25 @@ const custom = {
   int: setTypeMap({
     golang: 'int8',
     java: 'int',
-    typescript: 'number'
+    typescript: 'number',
+    json: '"number"',
+    swift: 'int'
   }),
   
   string: setTypeMap({
     golang: 'string',
     java: 'String',
-    typescript: 'string'
+    typescript: 'string',
+    json: '"string"',
+    swift: 'String'
   }),
   
   bool: setTypeMap({
     golang: 'bool',
     java: 'boolean',
-    typescript: 'boolean'
+    typescript: 'boolean',
+    json: '"boolean"',
+    swift: 'Bool'
   })
   
 };
