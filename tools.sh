@@ -2,8 +2,8 @@
 
 
 do_xport_stuff(){
-  export input_filex="/home/oleg/codes/oresoftware/types-depot/tc.input.js"
-  export conf_filex="/home/oleg/codes/oresoftware/types-depot/tc.conf.js"
+  export input_filex="$PWD/tc.input.js"
+  export conf_filex="$PWD/tc.conf.js"
 }
 
 
