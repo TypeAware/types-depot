@@ -20,7 +20,7 @@ exports.default = {
       gen: generators.golang,
       output: {folder: 'golang', file: 'golang.go'},
       options: {
-        packageName:'golang'
+        packageName: 'golang'
       }
     },
     
@@ -28,6 +28,24 @@ exports.default = {
       lang: 'java',
       gen: generators.java,
       output: {folder: 'java', file: 'Entities.java'},
+      options:{
+        jar: true
+      }
+    },
+  
+    {
+      lang: 'json',
+      gen: generators.json,
+      output: {folder: 'json', file: 'entities.json'},
+      options:{
+        jar: true
+      }
+    },
+  
+    {
+      lang: 'swift',
+      gen: generators.swift,
+      output: {folder: 'swift', file: 'entities.swift'},
       options:{
         jar: true
       }

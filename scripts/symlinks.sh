@@ -2,11 +2,9 @@
 
 set -e;
 
-repo_dir=$(dirname $(dirname "$BASH_SOURCE"));
-repo_dir_absolute="$(cd "$repo_dir" && pwd)";
+root="$(dirname $(dirname "$BASH_SOURCE"))";
+root_absolute="$(cd "$root" && pwd)";
+cd "$root_absolute";
+export PATH="$root_absolute/node_modules/.bin:${PATH}";
 
-cd "$repo_dir_absolute";
-
-export PATH="$repo_dir_absolute/node_modules/.bin:${PATH}";
-
-ores_type_creator symlinks -f symlinks.js
+type_creator symlink -f 'tc.symlinks.js'
