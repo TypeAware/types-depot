@@ -33,7 +33,8 @@ class Nested {
 
 public class App {
     public static void main(String[] args) {
-
+        
+        
         Gson gson = new Gson();
         Nested n = new Nested();
         foo.PUT.basic.req h = new foo.PUT.basic.req();

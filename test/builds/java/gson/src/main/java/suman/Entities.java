@@ -1,1 +1,1 @@
-/home/oleg/codes/oresoftware/types-depot/test/fixtures/Entities.java
+/home/oleg/codes/typeaware/types-depot/test/fixtures/Entities.java
