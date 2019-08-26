@@ -1,5 +1,5 @@
 {
-  "name": "<your-project>.types-depot",
+  "name": "@your-org/types-depot",
   "version": "0.0.101",
   "description": "Types depot for your org/project.",
   "main": "index.js",
@@ -20,6 +20,7 @@
     "type-repo",
     "type-repot"
   ],
+  "readme": "readme.md",
   "author": "Olegzandr VD",
   "license": "MIT",
   "bugs": {
