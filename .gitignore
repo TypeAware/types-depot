@@ -4,3 +4,7 @@
 node_modules
 builds/*
 !builds/.readme
+tmp
+temp
+tmp/worktrees
+temp/worktrees
